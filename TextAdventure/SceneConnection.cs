@@ -1,8 +1,8 @@
 ﻿namespace TextAdventure;
 
-public class RoomConnection : IUsable, IDescribable
+public class SceneConnection : IUsable, IDescribable
 {
-    public required Room To { get; set; }
+    public required Scene To { get; set; }
 
     public string Name { get; set; } = "Passageway";
 
@@ -14,5 +14,5 @@ public class RoomConnection : IUsable, IDescribable
 
     public string ImpassableMessage  { get; set; } = string.Empty;
 
-    public Dictionary<Item, Func<Room, Player, string>> UseEffects { get; set; } = [];
+    public Dictionary<Prop, Func<Scene, Player, string>> UseEffects { get; set; } = [];
 }

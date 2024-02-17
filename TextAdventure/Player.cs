@@ -2,7 +2,7 @@
 
 public class Player
 {
-    public List<Item> Inventory { get; set; } = [];
+    public List<Prop> Inventory { get; set; } = [];
 
     public int Experience { get ;set; }
 }
